@@ -26,6 +26,7 @@ struct ContactsFeature {
     }
     
     enum Action {
+        case addStringToText
         case addButtonTapped
         case deleteButtonTapped(id: Contact.ID)
         case destination(PresentationAction<Destination.Action>)
@@ -40,6 +41,9 @@ struct ContactsFeature {
     var body: some ReducerOf<Self> {
         Reduce { state, action in
             switch action {
+            case .addStringToText:
+                return .none
+                
             case .addButtonTapped:
                 state.destination = .addContact(
                     AddContactFeature.State(

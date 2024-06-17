@@ -25,6 +25,7 @@ struct CounterFeature {
         case factResponse(String)
         case timerTick
         case toggleTimerButtonTapped
+        case changeText
     }
     
     enum CancelID { case timer }
@@ -77,8 +78,13 @@ struct CounterFeature {
                 } else {
                     return .cancel(id: CancelID.timer)
                 }
+                
+            case .changeText:
+                state.textChange = "a \( +1 )"
+                return .run { send in
+                    
+                }
             }
-            
         }
     }
 }
