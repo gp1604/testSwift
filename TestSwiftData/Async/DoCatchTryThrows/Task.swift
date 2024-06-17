@@ -12,7 +12,7 @@ class TaskViewModel: ObservableObject {
     @Published var image2: UIImage? = nil
 
     func fetchImage() async throws {
-        try await Task.sleep(nanoseconds: 5_000_000_000)
+        try await Task.sleep(nanoseconds: 1_000_000_000)
         
         guard let url = URL(string: "https://picsum.photos/id/870/200/300?grayscale&blur=2") else  { return }
         let (data, _) = try await URLSession.shared.data(from: url)
@@ -24,8 +24,8 @@ class TaskViewModel: ObservableObject {
     
     func fetchImage2() async {
         do{
-            try? await fetchImage()
-            try await Task.sleep(nanoseconds: 5_000_000_000)
+//            try? await fetchImage()
+            try await Task.sleep(nanoseconds: 1_000_000_000)
             guard let url = URL(string: "https://picsum.photos/seed/picsum/200/300") else  { return }
             let (data, _) = try await URLSession.shared.data(from: url)
             let image = UIImage(data: data)

@@ -19,11 +19,12 @@
 		27E136CD2C1D3119008D15D1 /* AsyncAwait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E136CC2C1D3119008D15D1 /* AsyncAwait.swift */; };
 		27E136CF2C1D3A02008D15D1 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E136CE2C1D3A02008D15D1 /* Task.swift */; };
 		27FA33502B8C1F9D0004A9EE /* TCAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FA334F2B8C1F9D0004A9EE /* TCAView.swift */; };
-		27FA33532B8C21200004A9EE /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 27FA33522B8C21200004A9EE /* ComposableArchitecture */; };
 		27FA33582B8C76A30004A9EE /* ContactsFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FA33572B8C76A30004A9EE /* ContactsFeature.swift */; };
 		27FA335A2B8C76E40004A9EE /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FA33592B8C76E40004A9EE /* TabView.swift */; };
 		27FA335D2B8C77B90004A9EE /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FA335C2B8C77B90004A9EE /* ContactsView.swift */; };
 		27FA335F2B8C77DE0004A9EE /* AddContactFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FA335E2B8C77DE0004A9EE /* AddContactFeature.swift */; };
+		32C02F482C20D3290028818B /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 32C02F472C20D3290028818B /* ComposableArchitecture */; };
+		917D8CC103B9E9C847621835 /* Pods_TestSwiftData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C2EE159425D353A4801F219 /* Pods_TestSwiftData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,9 @@
 		27FA33592B8C76E40004A9EE /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 		27FA335C2B8C77B90004A9EE /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		27FA335E2B8C77DE0004A9EE /* AddContactFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactFeature.swift; sourceTree = "<group>"; };
+		64DD365A4912073E3908C39C /* Pods-TestSwiftData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSwiftData.release.xcconfig"; path = "Target Support Files/Pods-TestSwiftData/Pods-TestSwiftData.release.xcconfig"; sourceTree = "<group>"; };
+		8C2EE159425D353A4801F219 /* Pods_TestSwiftData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestSwiftData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F72CE2749C415CABB457BFBE /* Pods-TestSwiftData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSwiftData.debug.xcconfig"; path = "Target Support Files/Pods-TestSwiftData/Pods-TestSwiftData.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27FA33532B8C21200004A9EE /* ComposableArchitecture in Frameworks */,
+				32C02F482C20D3290028818B /* ComposableArchitecture in Frameworks */,
+				917D8CC103B9E9C847621835 /* Pods_TestSwiftData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +89,8 @@
 			children = (
 				27984C6F2B230892009B33C7 /* TestSwiftData */,
 				27984C6E2B230892009B33C7 /* Products */,
+				7A907FA32DABD6F0A7A721B9 /* Pods */,
+				356C4014C3EC2671A3FEE527 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +148,23 @@
 			path = Contacts;
 			sourceTree = "<group>";
 		};
+		356C4014C3EC2671A3FEE527 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C2EE159425D353A4801F219 /* Pods_TestSwiftData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A907FA32DABD6F0A7A721B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F72CE2749C415CABB457BFBE /* Pods-TestSwiftData.debug.xcconfig */,
+				64DD365A4912073E3908C39C /* Pods-TestSwiftData.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27984C7E2B230893009B33C7 /* Build configuration list for PBXNativeTarget "TestSwiftData" */;
 			buildPhases = (
+				7C4058EAD017AD99409B659F /* [CP] Check Pods Manifest.lock */,
 				27984C692B230892009B33C7 /* Sources */,
 				27984C6A2B230892009B33C7 /* Frameworks */,
 				27984C6B2B230892009B33C7 /* Resources */,
+				79810FD424ACA7F41A71955F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,7 +184,7 @@
 			);
 			name = TestSwiftData;
 			packageProductDependencies = (
-				27FA33522B8C21200004A9EE /* ComposableArchitecture */,
+				32C02F472C20D3290028818B /* ComposableArchitecture */,
 			);
 			productName = TestSwiftData;
 			productReference = 27984C6D2B230892009B33C7 /* TestSwiftData.app */;
@@ -189,7 +215,7 @@
 			);
 			mainGroup = 27984C642B230892009B33C7;
 			packageReferences = (
-				27FA33512B8C21200004A9EE /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				32C02F462C20D3280028818B /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
 			productRefGroup = 27984C6E2B230892009B33C7 /* Products */;
 			projectDirPath = "";
@@ -211,6 +237,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79810FD424ACA7F41A71955F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestSwiftData/Pods-TestSwiftData-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestSwiftData/Pods-TestSwiftData-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestSwiftData/Pods-TestSwiftData-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C4058EAD017AD99409B659F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestSwiftData-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		27984C692B230892009B33C7 /* Sources */ = {
@@ -274,7 +342,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -335,7 +403,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -353,6 +421,7 @@
 		};
 		27984C7F2B230893009B33C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F72CE2749C415CABB457BFBE /* Pods-TestSwiftData.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -381,15 +450,17 @@
 				PRODUCT_BUNDLE_IDENTIFIER = test.TestSwiftData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		27984C802B230893009B33C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64DD365A4912073E3908C39C /* Pods-TestSwiftData.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -418,10 +489,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = test.TestSwiftData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -449,20 +521,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		27FA33512B8C21200004A9EE /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+		32C02F462C20D3280028818B /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture#Installation";
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.8.2;
+				minimumVersion = 1.11.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		27FA33522B8C21200004A9EE /* ComposableArchitecture */ = {
+		32C02F472C20D3290028818B /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 27FA33512B8C21200004A9EE /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			package = 32C02F462C20D3280028818B /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
 		};
 /* End XCSwiftPackageProductDependency section */

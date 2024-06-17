@@ -8,7 +8,7 @@ import SwiftUI
 import ComposableArchitecture
 
 struct ContactsView: View {
-    @Bindable var store: StoreOf<ContactsFeature>
+    @BindingViewState var store: StoreOf<ContactsFeature>
     
     var body: some View {
         NavigationStack(path: $store.scope(state: \.path, action: \.path)) {
